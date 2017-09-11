@@ -2,19 +2,27 @@ import React, { Component } from 'react';
 import {
     StyleSheet,
     Text,
-    View
+    View,
+    ListView
 } from 'react-native';
 
 // Components
 import SimpleButton from './SimpleButton';
+import NoteList from './NoteList';
 
 export default class HomeScreen extends Component {
+
+    constructor(props) {
+        super(props);
+        this.ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    }
+
     render() {
         return (
             <View style={styles.container}>
+                <NoteList navigator={this.props.navigator}/>
                 <Text style={styles.noNotesText}>You haven't created any notes!</Text>
             
-
                 <SimpleButton
                     onPress={ () => this.props.navigator.push({
                         name: 'createNote'
@@ -32,7 +40,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginTop: 70
   },
   noNotesText: {
       color: '#48209A',

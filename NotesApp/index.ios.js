@@ -4,6 +4,7 @@ import {
   StyleSheet,
   Text,
   View, 
+  StatusBar
 } from 'react-native';
 
 // TODO: port to new Navigator component
@@ -69,7 +70,6 @@ export default class NotesApp extends Component {
 
   constructor(props) {
     super(props);
-    // StatusBarIOS.setStyle('light-content');
   }
 
   renderScene (route, navigator) {

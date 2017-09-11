@@ -6,6 +6,12 @@ import {
 } from 'react-native';
 
 export default class NoteScreen extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {note:this.props.title};
+    }
+
     render () {
         return (
             <View style={styles.container}>
@@ -13,11 +19,13 @@ export default class NoteScreen extends Component {
                     <TextInput 
                         ref="title"
                         autoFocus={true}
+                        autoCapitalize="sentences"
                         placeholder="Untitled"
                         style={[styles.textInput, styles.title]}
                         onEndEditing={(text) => {this.refs.body.focus()}}
                         textAlignVertical="top"
                         underlineColorAndroid="transparent"
+                        value={this.props.note.title}
                     />
                 </View>
                 <View style={styles.inputContainer}>
@@ -28,6 +36,7 @@ export default class NoteScreen extends Component {
                         style={[styles.textInput, styles.body]}
                         textAlignVertical="top"
                         underlineColorAndroid="transparent"
+                        value={this.props.note.body}
                     />
                 </View>
             </View>
