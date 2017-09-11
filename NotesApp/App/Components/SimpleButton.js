@@ -10,8 +10,10 @@ export default class SimpleButton extends Component {
     render () {
         return (
             <TouchableOpacity onPress={this.props.onPress}>
-                <View>
-                    <Text>{this.props.customText || 'Simple Button'}</Text>
+                <View style={this.props.style}>
+                    <Text textStyle={this.props.textStyle}>
+                        {this.props.customText || 'Simple Button'}
+                    </Text>
                 </View>
             </TouchableOpacity>
         );
