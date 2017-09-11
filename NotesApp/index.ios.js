@@ -4,6 +4,7 @@ import {
   StyleSheet,
   Text,
   View, 
+  StatusBar
 } from 'react-native';
 
 // TODO: port to new Navigator component
@@ -22,6 +23,8 @@ var NavigationBarRouteMapper = {
           <SimpleButton
             onPress={() => navigator.pop()}
             customText='Back'
+            style={styles.navBarLeftButton}
+            textStyle={styles.navBarButtonText}
           />
         );
       default: 
@@ -40,6 +43,8 @@ var NavigationBarRouteMapper = {
               });
             }}
             customText='Create Note'
+            style={styles.navBarRightButton}
+            textStyle={styles.navBarButtonText}
           />
         );
       default: 
@@ -51,11 +56,11 @@ var NavigationBarRouteMapper = {
     switch (route.name) {
       case 'home': 
         return (
-          <Text>Notes App</Text>
+          <Text style={styles.navBarTitleText}>Notes App</Text>
         );
       case 'createNote': 
         return (
-          <Text>Create Note</Text>
+          <Text style={styles.navBarTitleText}>Create Note</Text>
         );
     }
   }
@@ -63,11 +68,15 @@ var NavigationBarRouteMapper = {
 
 export default class NotesApp extends Component {
 
+  constructor(props) {
+    super(props);
+  }
+
   renderScene (route, navigator) {
     switch (route.name) {
       case 'home':
         return (
-          <HomeScreen />
+          <HomeScreen navigator={navigator}/>
         );
       case 'createNote':
         return (
@@ -84,6 +93,7 @@ export default class NotesApp extends Component {
          navigationBar={
            <Navigator.NavigationBar
               routeMapper={NavigationBarRouteMapper}
+              style={styles.navBar}
            />
          }
       />   
@@ -92,11 +102,37 @@ export default class NotesApp extends Component {
 }
 
 const styles = StyleSheet.create({
+  navContainer: {
+    flex: 1
+  },
+  navBar: {
+    backgroundColor: '#5B29C1',
+    borderBottomColor: '#48209A',
+    borderBottomWidth: 1
+  },
+  navbarTitleText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: '500',
+    marginVertical: 16,
+    paddingTop: 10
+  },
+  navBarLeftButton: {
+    paddingLeft: 10
+  },
+  navBarRightButton: {
+    paddingRight: 10
+  },
+  navBarButtonText: {
+    color: '#EEE',
+    fontSize: 16,
+    marginVertical: 10
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
-  }
+  },
 });
 
 AppRegistry.registerComponent('NotesApp', () => NotesApp);
