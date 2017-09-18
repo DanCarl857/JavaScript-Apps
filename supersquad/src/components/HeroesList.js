@@ -20,6 +20,12 @@ class HeroesList extends Component {
                                         onClick={() => this.props.removeCharacterById(hero.id)}>
                                         x
                                     </div>
+                                    {' '}<br />
+                                    <div className="list-item">
+                                        <b>Speed: </b>{hero.speed}{' '}{' '}
+                                        <b>Intelligence: </b>{hero.intelligence}{' '}{' '}
+                                        <b>Strength: </b>{hero.strength}
+                                    </div>
                                 </li>
                             )
                         })
