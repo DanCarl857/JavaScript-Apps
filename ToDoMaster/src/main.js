@@ -5,17 +5,34 @@ import {
     TextInput,
     View,
     TouchableOpacity,
-    ScrollView
+    ScrollView,
+    AsyncStorage
 } from 'react-native';
 
 module.exports = React.createClass({
 
     getInitialState() {
         return ({
-            tasks: ['Take out the trash', 'Get groceries', 'Practice Piano'],
+            tasks: [],
             task: '',
             completedTasks: []
-        })
+        });
+    },
+
+    componentWillMount() {
+        AsyncStorage.getItem('tasks')
+            .then((response) => {
+                this.setState({tasks: JSON.parse(response)})
+            });
+        AsyncStorage.getItem('completedTasks')
+            .then((response) => {
+                this.setState({completedTasks: JSON.parse(response)})
+            });
+    },
+
+    setStorage() {
+        AsyncStorage.setItem('tasks', JSON.stringify(this.state.tasks));
+        AsyncStorage.setItem('completedTasks', JSON.stringify(this.state.completedTasks));
     },
 
     renderList(tasks) {
@@ -65,6 +82,7 @@ module.exports = React.createClass({
         this.setState({
             completedTasks
         });
+        this.setStorage();
     },
 
     completeTask(index) {
@@ -78,11 +96,13 @@ module.exports = React.createClass({
             tasks,
             completedTasks
         });
+        this.setStorage();
     },
 
     addTask() {
         let tasks = this.state.tasks.concat([this.state.task]);
         this.setState({tasks: tasks});
+        this.setStorage();
     },
 
     render() {
