@@ -31,8 +31,7 @@ class App extends Component {
                     <h2>Input Your Birthday!</h2>
                     <FormControl 
                         type="date"
-                        onChange={ event => this.setState({ newDate: event.target.value })}
-                    >
+                        onChange={ event => this.setState({ newDate: event.target.value })}>
                     </FormControl>
                     {' '}
                     <Button
