@@ -16,6 +16,7 @@ class App extends Component {
         }
     }
 
+
     changeBirthday() {
         console.log(this.state);
         this.setState({
@@ -33,14 +34,14 @@ class App extends Component {
                         type="date"
                         onChange={ event => this.setState({ newDate: event.target.value })}>
                     </FormControl>
-                    {' '}
+                    {'  '}
                     <Button
                         onClick={() => this.changeBirthday()}>
                         Submit
                     </Button>
                     {
                         this.state.showStats ? 
-                        <div class="fade age-stats">
+                        <div className="fade age-stats">
                             <AgeStats date={this.state.birthday} />
                         </div>
                         : <div></div>
