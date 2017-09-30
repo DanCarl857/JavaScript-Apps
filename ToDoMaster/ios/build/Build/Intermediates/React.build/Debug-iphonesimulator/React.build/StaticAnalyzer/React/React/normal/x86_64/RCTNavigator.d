@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTNavigator.m \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTNavigator.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTNavItem.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTScrollView.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTScrollableProtocol.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTView.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTWrapperViewController.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/RCTViewControllerProtocol.h \
+  /Users/daniel/Documents/learn/react/JavaScript-Apps/ToDoMaster/node_modules/react-native/React/Views/UIView+React.h
