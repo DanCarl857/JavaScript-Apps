@@ -6,12 +6,10 @@ import reducers from './reducers';
 import { Header } from './components/common';
 
 const App = () => {
-    return (
-        <Provider store={createStore(reducers)}>
-            <View>
-                <Header headerText="Tech Stack" />
-            </View>
-        </Provider>
+    return ( 
+    <Provider store = { createStore(reducers) } >
+        <Header headerText = "Tech Stack" />
+    </Provider>
     )
 };
 
