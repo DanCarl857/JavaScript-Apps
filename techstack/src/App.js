@@ -8,12 +8,12 @@ import { LibraryList } from './components/LibraryList';
 
 const App = () => {
     return ( 
-	<Provider store = { createStore(reducers) }>
+	    <Provider store = { createStore(reducers) }>
         	<View>
         		<Header headerText = "Tech Stack" />
-        		<LibraryList / >
+        		<LibraryList />
         	</View> 
-	</Provider>
+	    </Provider>
     )
 }
 export default App;
