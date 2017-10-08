@@ -7,6 +7,7 @@ import { Card, CardSection, Input, Button, Spinner } from './common';
 class LoginForm extends Component {
 
   onEmailChange(text) {
+
     console.log(text);
     this.props.emailChanged(text);
   }

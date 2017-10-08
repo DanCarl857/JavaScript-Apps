@@ -4,6 +4,7 @@ import { createStore, applyMiddleware } from 'redux';
 import firebase from 'firebase';
 import ReduxThunk from 'redux-thunk';
 import reducers from './src/reducers';
+import { View } from 'react-native';
 
 import LoginForm from './src/components/LoginForm';
 
